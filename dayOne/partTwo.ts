@@ -4,7 +4,7 @@ export default function partTwo(array: string[]) {
   const medNumObj: any  = {} 
   const largeNumObj: any  = {}
 
-// making the small, med, and large obj's @ 673 breakpoints ( 2020 / 3)
+// making the small, med, and large obj's @ 673 breakpoints (2020 / 3)
 
   for (let i = 0; i < array.length; i++) {
     const current : Number = parseInt(array[i])
@@ -34,7 +34,7 @@ export default function partTwo(array: string[]) {
 
   // I now need the values of all three numbers so I can multiply them together for the final result
   const medPlusMedNum: (string | undefined) = findSmallNum[0]
-  const thirdNum : number = 2020 - Number(findSmallNum[0])
+  const thirdNum : number = 2020 - Number(medPlusMedNum)
 
   // Basically an exact copy from part one, but faster because I have a smaller array to work with
   const firstNum : (string | undefined) = Object.keys(medNumObj).find((n: string) => {
