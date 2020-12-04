@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 
-const input = fs.readFileSync('./dayTwo/day-two-input.txt', 'utf8').split('\n');
+const input = fs.readFileSync('./weekOne/dayTwo/day-two-input.txt', 'utf8').split('\n');
 
-import dayTwoPartTwo from './dayTwo/partTwo'
+import dayTwoPartTwo from './weekOne/dayTwo/partTwo'
 
 function runDay(solution: any) {
   return solution
