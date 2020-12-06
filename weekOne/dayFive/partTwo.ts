@@ -1,5 +1,4 @@
-export default function partOne(array : string[]) {
-
+export default function partTwo(array : string[]) {
   let seatIdArr : number[] = []
 
   const findSeatNum = (seatArr : string[], seatRange : number[]) => {
@@ -40,6 +39,9 @@ export default function partOne(array : string[]) {
     seatIdArr.push(findSeatId(array[i]))
   }
 
-  return Math.max(...seatIdArr)
+  const sortedSeatIds = seatIdArr.sort((a, b) => a - b).filter(x => x > 0)
+  
+  return sortedSeatIds.forEach(function(_,index){if (sortedSeatIds[index+1] === sortedSeatIds[index]+2) console.log("Part 2", sortedSeatIds[index]+1)})
 }
 
+// 662 is TOO LOW!
