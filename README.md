@@ -1,11 +1,9 @@
 # Advent Of Code 2020
 
-### Frustrations so far:
-- Day one, part two was an easier version of the ThreeSum problem; woo-hoo! Can't wait for tomorrow. 😡
-- I should probably add a helper function for my find() so I don't have those awkward (string | undefined) types.
-- I don't think I should focus on performance optimization unless I have to, I didn't worry about that
-  for day two and I had a much less stressful time completing the challenges. I feel like Typescript encourages you
-  to write pure functions.
+### Week One:
+- I'm refining the workflow, I think I'm going to start naming the days and parts by numbers but name the function the actual title of the challenge
+- If I get stuck I try to reduce my input down to a few test cases, so I can break the problem into smaller parts
+- You need to cast objects **AS** an interface when working with Array.protoype methods
 
-### Random comments:
-- I'm likely going to install and use Deno so I can get rid of the node modules folder on my computer (Deno imports everything through links, but it also has TypeScript out of the box!)
+### TODO's:
+- port the project to Deno?
