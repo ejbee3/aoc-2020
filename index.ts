@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const input = fs.readFileSync('./weekOne/daySix/day-6-input.txt', 'utf8').split('\n');
+const input = fs.readFileSync('./weekOne/daySix/day-6-input.txt', 'utf8').split(/\s/);
 
 import 
 weekOneSolution from './weekOne/daySix/partOne'
