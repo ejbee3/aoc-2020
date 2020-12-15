@@ -6,9 +6,9 @@ export default function partOne(array: number[]) {
 
     const preambleSumMap : number[][] = preamble.map(x => preamble.map(y => x + y))
     const findValidSums = preambleSumMap.map(sums => sums.find(sum => sum === array[i]))
-    const result = findValidSums.filter(x => x !== undefined).length > 0
+    const isValidSum = findValidSums.filter(x => x !== undefined).length > 0
 
-    if (result) {
+    if (isValidSum) {
       preamble = array.slice(i - 24, i + 1)
     } else {
       return array[i]
