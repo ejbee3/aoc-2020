@@ -11,9 +11,9 @@ export default function partOne(array: number[]) {
     if (isValidSum) {
       preamble = array.slice(i - 24, i + 1)
     } else {
-      return array[i]
+      return [i, array[i]]
     }
   }
-  return true
+  return [0, 0]
 }
 
